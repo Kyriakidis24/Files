@@ -29,8 +29,5 @@ foreach ($rows as $row)
  echo "<td>" . $row['value'] . "</td>";
  echo "</tr>";
 }
-
-foreach ($prices as $key => $value)
-    echo $key . '=>' . $value . '<br />';
 ?>
   </html>
