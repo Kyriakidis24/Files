@@ -1,0 +1,72 @@
+<html>
+<head>
+ <title>Προσωπικότητες του 21ου αιώνα</title>
+  <h1> Προσωπικότητες του 21ου αιώνα </h1> 
+</head>
+<body>
+
+<?php
+
+$rows = array(
+ 0 => array(
+     'firstname' => 'Bill', 
+     'lastname' => 'Gates', 
+     'age' => 14,
+     'email' => 'bill@microsoft.com'),
+ 1 => array(
+     'firstname' => 'Steve', 
+     'lastname' => 'Jobs', 
+     'age' => 34,
+     'email' => 'steve@apple.com'
+ ),
+ 2 => array(
+     'firstname' => 'Linus', 
+     'lastname' => 'Torvalds', 
+     'age' => 24,
+     'email' => 'linus@microsoft.com'
+ ),
+ 3 => array(
+     'firstname' => 'Andreas', 
+     'lastname' => 'Kyriak', 
+     'age' => 40,
+     'email' => 'add@microsoft.com'
+ ),
+ 4 => array(
+     'firstname' => 'Andre', 
+     'lastname' => 'Lourk', 
+     'age' => 40,
+     'email' => 'add@microsoft.com'
+ )
+ 
+);
+
+echo "<table border=3>
+      <tr><td>
+            Firstname 
+          </td>
+          <td>
+            Lastname
+          </td>
+          <td>
+            Age
+          </td>
+          <td>
+            Email
+          </td>
+      </tr>";
+
+for ($i= 1; $i<count($rows); $i++)
+{
+ echo "<tr>";
+ echo "<td>" . $rows[$i]['firstname'] . "</td>";
+ echo "<td>" . $rows[$i]['lastname'] . "</td>";
+ echo "<td>" . $rows[$i]['age'] . "</td>";
+ echo "<td>" . $rows[$i]['email'] . "</td>";
+ echo "</tr>";
+}
+
+echo "</table>";
+?>
+
+</body>
+</html>
